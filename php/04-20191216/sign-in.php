@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 10-1</title>
+    <style>
+        fieldset{ width: 40%; padding: 30px; background-color: #00fdfe;}
+        label{ float: left; width: 100px;}
+        input{ margin: 3px 0;}
+    </style>
+</head>
+<body>
+<fieldset>
+    <!--    <legend>Registration Form</legend>-->
+    <form action="http://ww.google.com">
+        <label>Họ và tên</label>
+        <input type="name" placeholder="Hãy nhập tên người dùng" required> <br>
+        <label>Tên tài khoản</label>
+        <input type="text"> <br>
+        <label for="email">Email</label>
+        <input type="email" id="email"> <br>
+        <label>Mật khẩu</label>
+        <input type="password" placeholder="Nhập pass"> <br>
+        <label>Năm sinh</label>
+        <input type="date"> <br>
+        <input type="checkbox">Tôi đã đọc hiểu các điều kiện <br>
+        <label>&nbsp</label>
+        <input type="submit" value="Đăng kí">
+        <input type="reset" value="Reset">
+    </form>
+</fieldset>
+</body>
+</html>
