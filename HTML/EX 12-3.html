@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 12-3</title>
+    <script>
+        // document.write("Phuong trinh bac nhat AX + B =0");
+        var a = prompt("Enter a: ");
+        if (isNaN(a)) {
+            alert("Vui lòng nhập vào giá trị là số!");
+        }
+        var b = prompt("Enter b: ");
+        if (isNaN(b)) {
+            alert("Vui lòng nhập vào giá trị là số!");
+        }
+        function phuongTrinh(a,b) {
+            if (a == 0 && b == 0) {
+                document.write('Phuong trinh ' + a + 'x + ' + b + ' = 0 co vo so nghiem');
+            } else if (a != 0 && b == 0) {
+                document.write('Phuong trinh ' + a + 'x + ' + b + ' = 0 co nghiem x = 0');
+            } else if (a == 0 && b != 0) {
+                document.write('Phuong trinh ' + a + 'x + ' + b + ' = 0 vo nghiem');
+            } else if (a != 0 && b != 0) {
+                document.write('Phuong trinh ' + a + 'x + ' + b + ' = 0 co nghiem x = ' + (-b / a));
+            }
+        }
+        phuongTrinh(a,b);
+    </script>
+</head>
+<body>
+</body>
+</html>

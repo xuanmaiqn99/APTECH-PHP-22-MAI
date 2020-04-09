@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 10-5</title>
+    <style>
+        fieldset{
+            width: 500px; padding: 10px;
+            /*border: 1px solid gray;*/
+            background-color: #fcdda9;
+        }
+        label{
+            float: left; padding-right: 30px;
+            font-weight: bold;
+        }
+        input{margin: 5px 0;}
+    </style>
+    <script>
+        function getInfo() {
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var website=document.getElementById("website").value;
+            var group=document.getElementById("group").value;
+            var message=document.getElementById("message").value;
+
+            var info = "Tên" + name + "<br>";
+            info += " Email" + email + "<br>";
+            info += "website " + website + "<br>";
+            info += " group" + group + "<br>";
+            info += " message" + message + "<br>";
+
+            document.getElementById("result").innerHTML =info;
+        }
+
+    </script>
+</head>
+<body>
+<fieldset>
+    <legend><h3>User Profile</h3></legend>
+    <form action="#">
+        <label>Name *</label>
+        <input required type="name" id="name"> <br>
+        <label>Email *</label>
+        <input required type="email" id="email"> <br>
+        <input style="margin-left: 80px;" type="checkbox"> Send me an email when there is update <br>
+        <label>Website</label>
+        <input type="text" id="website"> <br>
+        <label>Group</label>
+        <select style="margin-left: 10px;" id="group">
+            <option>Member</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select> <br>
+        <label>Message</label>
+        <input style="padding: 80px 100px; margin-left: -5px;"
+               type="textarea" id="mess"> <br>
+        <label>&nbsp</label>
+        <input style="margin-left: 45px;"
+               type="submit" value="Save Changes"
+               onclick="getInfo(); return false;" >
+    </form>
+</fieldset>
+<div id="result">
+</div>
+</body>
+</html>

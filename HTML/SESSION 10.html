@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SESSIon 10</title>
+    <style>
+        form{ padding: 30px; background-color: #ee8662;
+            border: 2px solid darksalmon; width: 400px;}
+        label{ float: left; width: 100px;}
+        input{ margin: 5px 0; background-color: pink}
+    </style>
+    <script>
+        var age = parseInt(prompt("Nhập tuổi của bạn: ",18));
+        alert("Tuổi của bạn là: \n "+ age);
+
+    </script>
+    <script>
+        function showInfo() {
+            var name = document.getElementById("name").value;
+            var TK = document.getElementById("TK").value;
+            var email = document.getElementById("email").value;
+            var add = document.getElementById("address").value;
+
+
+            if (TK.length !=10) alert("Vui lòng nhập đủ 10 số.");
+            if (isNaN(name)==true) alert("Tên tài khoản bao gồm cả chữ lẫn số");
+
+            var c = "Tên khách hàng:" + name +"<br>";
+            c+= "Số tài khoản: " + TK + "<br>";
+            c+= "Email: " + email + " <br>";
+            c+= "Địa chỉ: " + add + " <br>";
+
+            document.getElementById("result").innerHTML = c;
+        }
+    </script>
+</head>
+<body>
+<form action="#">
+    <label>Tên KH: </label>
+    <input type="text" id="name"> <br>
+    <label>Số tài khoản </label>
+    <input type="number" id="TK"> <br>
+    <label>Email </label>
+    <input type="email" id="email"> <br>
+    <label>Địa chỉ </label>
+    <input type="text" id="address"> <br>
+    <label>&nbsp </label>
+    <input style="background-color: yellowgreen" type="submit" value="In thông tin" onclick="showInfo();
+    return false">
+<!--    false: ngừng lại quá trình chuyển trang-->
+<!--    on click nhấp chuột vào sinh ra 1 việc gì đó-->
+</form>
+<div id="result">
+
+</div>
+</body>
+</html>

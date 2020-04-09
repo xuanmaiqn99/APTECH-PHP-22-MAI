@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>demo4.3</title>
+    <style>
+        nav{
+            background-color: lightgray;
+            padding: 10px;
+        }
+        nav >a{
+            text-decoration: none;
+            text-transform: uppercase;      /*dùng để viết hoa*/
+            color: red;
+            margin-right: -4px;
+            padding: 10px;
+            transition: color 1.5s;
+        }
+        .active{
+            background-color: black;
+            color: white;
+        }
+        img{
+            width: 24.5%;
+            height: 300px;
+        }
+        #center{
+            text-align: center;
+        }
+        #test:hover{
+            filter: grayscale(80%);
+            /*chỉnh màu ảnh */
+            transform: scale(1.1);
+            /*phóng to ảnh khi chạm vào*/
+        }
+        span{
+            color:red;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+<body>
+<nav>
+    <a class="active" href="#">Trang chủ</a>
+    <a href="#">Tin tức</a>
+    <a href="#">Liên hệ</a>
+    <a href="#">Sản phẩm</a>
+</nav>
+<p>1.<a href="#">Top 7 danh lam thắng cảnh đẹp nhất thế giới</a></p>
+<p>2.<a href="#">Top 4 danh lam thắng cảnh nổi tiếng tại Việt Nam</a></p>
+<img src="images/CatTien.jpg">
+<img src="images/ChiTietChuaBuuPhong.jpg">
+<img src="images/HangGon.jpg">
+<img src="images/HoLongAn.jpg">
+3.<a href="#">Ghé thăm chùa Bửu Phong</a><br>
+<p id="center">
+    <img src="images/ChiTietChuaBuuPhong.jpg"><br>
+    <i>Toàn cảnh bên trong</i>
+</p>
+<p>
+    <span>V</span>iệt Nam là...
+</p>
+</body>
+</html>
+<!--thẻ inline ko bao giờ viết text-align đc-->

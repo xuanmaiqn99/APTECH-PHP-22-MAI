@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thumbnail - SESSIon 7</title>
+    <style>
+        .thumbnail{
+            width: 31%;
+            float: left;
+            margin: 1%;
+            border: 1px solid gray;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .thumbnail > img{
+            width: 40%;
+            margin: 5%;
+            transition: all 1.5s;   /*tốc độ chuyển đổi*/
+            filter: grayscale(80%);
+        }
+        .thumbnail > h3{
+            color: orange;
+        }
+        .thumbnail > h4{
+            color: red;
+        }
+        .thumbnail > button{
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 2px 2px 3px gray;
+        }
+        /*img:hover{*/
+        /*    filter: grayscale(0%);*/
+        /*    transform: scale(1.1);*/
+        /*}   !*làm hiệu ứng khi chạm vào bông hoa sẽ trở lại màu ban đầu*!*/
+        .thumbnail:hover >img{
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+        /*làm hiêu ứng chỉ cần chạm vào khung thumbnail, hình sẽ đổi màu*/
+        #demo{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition: width 2s;
+        }
+        #demo:hover{
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<h2>Top sản phẩm bán chạy</h2>
+<div id="demo"></div>
+<section>
+    <div class="thumbnail">
+        <img src="images/images.jpg" alt="">
+        <h3>Hoa hồng</h3>
+        <h4>5$</h4>
+        <button>Mua hàng</button>
+    </div>
+    <div class="thumbnail">
+        <img src="images/images.jpg" alt="">
+        <h3>Hoa hồng</h3>
+        <h4>5$</h4>
+        <button>Mua hàng</button>
+    </div>
+    <div class="thumbnail">
+        <img src="images/images.jpg" alt="">
+        <h3>Hoa hồng</h3>
+        <h4>5$</h4>
+        <button>Mua hàng</button>
+    </div>
+    <div class="thumbnail">
+        <img src="images/images.jpg" alt="">
+        <h3>Hoa hồng</h3>
+        <h4>5$</h4>
+        <button>Mua hàng</button>
+    </div>
+    <div class="thumbnail">
+        <img src="images/images.jpg" alt="">
+        <h3>Hoa hồng</h3>
+        <h4>5$</h4>
+        <button>Mua hàng</button>
+    </div>
+
+</section>
+</body>
+</html>

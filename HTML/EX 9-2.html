@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 9-2</title>
+    <style>
+        
+        table{
+            border: black thin solid;
+        }
+        table> caption{
+            text-align: left;}
+        th,td{text-align: left; padding-right: 15px;}
+        table#t1 th:nth-child(1){background-color: #ffc0cb;}
+        table#t1 th:nth-child(2){background-color: #00befe;}
+        table#t2 {background-color: palevioletred}
+        table#t2 th{padding: 15px 50px;}
+        table#t3 td,tr{
+            padding: 5px 30px; text-align: center;}
+    </style>
+</head>
+<body>
+<table id="t1" border="1">
+    <caption><h4>Bài tập 1: Hãy tạo bảng như hình dưới</h4></caption>
+    <tr>
+        <th colspan="2">KTV01</th>
+        <th colspan="2">KTV02</th>
+    </tr>
+    <tr>
+        <td style="background-color: greenyellow;">Họ và tên</td>
+        <td style="background-color: greenyellow;">Số CP</td>
+        <td style="background-color: orange;">Họ và tên</td>
+        <td style="background-color: orange;">Số CP</td>
+    </tr>
+    <tr>
+        <td>Nguyễn Văn A</td>
+        <td>AT2000084re01</td>
+        <td>Nguyễn Văn C</td>
+        <td>AT2000084re01</td>
+    </tr>
+    <tr>
+        <td>Nguyễn Văn B</td>
+        <td>AT2000084re01</td>
+        <td>Nguyễn Văn D</td>
+        <td>AT2000084re01</td>
+    </tr>
+
+</table>
+<hr color="gray">
+<table id="t2" border="1">
+    <caption><h4>Bài tập 2: Hãy tạo bảng như hình dưới</h4></caption>
+    <tr>
+        <th rowspan="2">KTV01</th>
+        <td>Họ và tên</td>
+        <td>Nguyễn Văn NHân</td>
+        <td>Lê Văn Hùng</td>
+    </tr>
+    <tr>
+        <td>Số CP</td>
+        <td>AT994859</td>
+        <td>AT994859</td>
+    </tr>
+    <tr>
+        <th rowspan="2">KTV02</th>
+        <td>Họ và tên</td>
+        <td>Nguyễn Thị Hà</td>
+        <td>Lê Văn Hương</td>
+    </tr>
+    <tr>
+        <td>Số CP</td>
+        <td>AT994859</td>
+        <td>AT994859</td>
+    </tr>
+</table>
+<hr color="gray">
+<table id="t3" border="1">
+    <caption><h4>Bài tập 3: Hãy tạo bảng như hình dưới</h4></caption>
+   <tr>
+       <td style="background-color: purple;">Truyện cười</td>
+       <td style="background-color: greenyellow;">Xã hội</td>
+       <td style="background-color:deeppink;">Thế giới</td>
+       <td style="background-color: yellow;">Kinh doanh</td>
+   </tr>
+    <tr>
+        <td style="background-color:grey;">Rao vặt</td>
+        <td style="background-color:black; color: greenyellow;
+            "colspan="2" rowspan="2">CHƯƠNG TRÌNH QUẢNG CÁO</td>
+        <td style="background-color: lightgreen;">Văn hóa</td>
+    </tr>
+    <tr>
+        <td style="background-color: green">Tin nhanh</td>
+        <td style="background-color:cornflowerblue">Tin nhanh</td>
+    </tr>
+    <tr>
+        <td style="background-color: yellow">Đời sống</td>
+        <td style="background-color:hotpink">Pháp luật</td>
+        <td style="background-color:pink">Vi tính</td>
+        <td style="background-color:royalblue">Sức khỏe</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 9-1</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border: red thin solid;
+            margin: 10px 0 30px 60px;
+        }
+        th,td{text-align: center;padding: 20px 30px;}
+        table#t1 tr:nth-child(odd){background-color: #a9a9a9;}
+        table#t1 tr:nth-child(even){background-color: #faebd7;}
+        table#t1 td:nth-child(2){background-color: #7fffd4;}
+        table#t3 tr:nth-child(1){background-color: #faebd7;}
+    </style>
+</head>
+<body>
+<h2>BÀI 1</h2>
+<table id="t1" border="1">
+        <caption><h4>Thông tin học viên</h4></caption>
+        <tr>
+            <th>Họ và tên</th>
+            <th>Điểm lý thuyết</th>
+            <th>Điểm thực hành</th>
+        </tr>
+        <tr>
+            <td>Nguyễn Văn A</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Nguyễn Văn A</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Nguyễn Văn A</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Nguyễn Văn A</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Nguyễn Văn A</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Nguyễn Văn A</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+
+</table>
+<hr color="green">
+<h2>BÀI 2</h2>
+<table border="1">
+    <caption><h4>Thông tin học viên</h4></caption>
+    <tr>
+        <th rowspan="2">Họ và tên</th>
+        <th colspan="2">Điểm thi</th>
+    </tr>
+    <tr>
+        <th>Điểm lý thuyết</th>
+        <th>Điểm thực hành</th>
+    </tr>
+    <tr>
+        <td>Nguyễn Văn A</td>
+        <td>7</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>Nguyễn Văn A</td>
+        <td>7</td>
+        <td>8</td>
+    </tr>
+</table>
+<hr color="green">
+<h2>BÀI 3</h2>
+<table id="t3" border="1">
+    <caption><h4>Thông tin học viên</h4></caption>
+    <tr>
+        <th colspan="2">Họ và tên</th>
+        <td>Nguyễn Văn A</td>
+        <td>Trần Văn B</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Điểm</th>
+        <th>Lý thuyết</th>
+        <td>7</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <th>Thực hành</th>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    </tr>
+</table>
+<hr color="green">
+</body>
+</html>

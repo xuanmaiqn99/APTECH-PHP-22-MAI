@@ -1,0 +1,11 @@
+body{
+    width: 60%;
+    margin: auto; /*dùng để căn giữa*/
+}
+P{
+    color: red;
+}
+hr{
+    /*width: 700px;*/
+    height: 3px;
+}

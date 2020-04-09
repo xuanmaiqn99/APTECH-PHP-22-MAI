@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 12-2</title>
+    <style>
+        form{border: 1px blue solid; box-shadow: 3px 3px 3px blue;
+            width:500px; height: 300px; margin: auto;
+            border-radius: 10%;
+        }
+        #content{padding: 40px 70px;}
+        .last{background-color: blue; border: 1px blue solid;
+            color: #ffffff; border-radius: 10%; padding: 5px 10px 5px 10px;}
+        label{float: left; color:blue; width: 120px;}
+        input{margin-bottom: 10px; padding: 5px 0;
+            border-radius: 4px; font-size: 85%;}
+        h2{text-align: center; color: blue;}
+    </style>
+    <script>
+        function Login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var repassword= document.getElementById("repassword").value;
+
+            if(username==" "){
+                alert("Please enter username: ");
+                return false;
+            }
+            if(password==" "){
+                alert("Please enter password");
+                return false;
+            }
+            if(password != repassword ){
+                alert("Please enter password again");
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+
+</head>
+<body>
+<form action="#">
+    <h2>Register to system</h2>
+    <div id="content">
+        <label>User name: </label>
+        <input type="name" id="username" required> <br>
+        <label>Password: </label>
+        <input type="password" id="password" required> <br>
+        <label>Re_Password</label>
+        <input type="password" id="repassword" required> <br>
+        <label>&nbsp</label>
+        <input class="last" type="submit" value="Login" onclick= "Login(); return false">
+        <input class="last" type="reset" value="Reset">
+
+    </div>
+</form>
+</body>
+</html>

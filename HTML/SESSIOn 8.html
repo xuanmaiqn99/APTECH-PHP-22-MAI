@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>session 8</title>
+    <style>
+        #khung{
+            border: 2px solid sienna;
+            width: 500px;
+            height: 500px;
+            margin-left: 100px;
+            position: relative;
+        }
+        p{
+            background-color: green;
+            position: absolute;
+        }
+        #p1{left: 250px;    top: 50px}
+        #p2{left: 80px;    top: 100px}
+        #p3{left: 450px;    top: 150px}
+        nav {
+            background-color: green;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        img{
+            width: 10%;
+            position: fixed;
+            right: 20px; top: 100px;    z-index: 100;
+        }
+    </style>
+</head>
+<body>
+<div id="khung">
+    <p id="p1">A</p>
+    <p id="p2">B</p>
+    <p id="p3">C</p>
+</div>
+<nav>
+    <a href="#">home</a>
+    <a href="#">product</a>
+    <a href="#">contact</a>
+</nav>
+<img src="images/giỏ%20hàng.png" alt="giỏ hàng">
+<div style="height: 1000px;"></div>
+</body>
+</html>

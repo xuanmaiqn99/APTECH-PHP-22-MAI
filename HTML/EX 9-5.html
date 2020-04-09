@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 9-5</title>
+    <style>
+        table#t1{
+            border-collapse: collapse;
+            width: 600px;
+            border: red 2px solid;
+        }
+        table#t2 {
+            border-collapse: collapse;
+            border: red 2px solid;
+            margin-top: -2px;
+            width: 600px;
+        }
+        img {
+            width: 100%;
+        }
+        table#t1 td:nth-child(1) {padding-right: 500px;}
+        table#t1 tr:nth-child(1) {
+            background-color: red;
+            color: white;
+            text-align: right;
+        }
+        table#t1 tr:nth-child(3) {
+            font-size: 27px;
+            color: #cb0033;
+            background-color: pink;
+        }
+        table#t2 td:nth-child(1){width: 50%;}
+        table#t2 td:nth-child(2){}
+
+    </style>
+</head>
+<body>
+<table id="t1" border="1">
+    <tr>
+        <th colspan="2">Công nghệ dầu gội mới</th>
+        <td rowspan="3"><img src="images/dầu%20gội.jpg"></td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+    </tr>
+    <tr>
+        <th colspan="2">Tỏa sáng cùng DOUBLE RICK</th>
+    </tr>
+</table>
+<table id="t2" border="1">
+    <tr>
+        <td>
+            <ul style="list-style-type: square;">
+                <li style="color: red;">Sản phẩm khuyến mãi</li>
+                <ul style="list-style-type: circle">
+                    <li>Dầu gội nbjbjbrgjbjbj</li>
+                </ul>
+                <li style="color: red;">Đối tượng tham gia</li>
+                <ul style="list-style-type: circle; text-align: left;">
+                    <li>Áp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm khuyến mãi </li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed neque porta, pharetra erat ut, laoreet
+                        ante. Mauris consectetur eget est non facilisis. Sed pellentesque, odio eget sollicitudin auctor, sem lectus
+                        lacinia sem, non laoreet mauris sem sed metus.
+                    </li>
+                </ul>
+            </ul>
+        </td>
+        <td>
+            <ul style="list-style-type: square;">
+                <li style="color: red;">Cách thức nhận giải</li>
+                <ul style="list-style-type: circle;">
+                    <li><b><i>Giải khuyến khích:</i></b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed neque porta, pharetra erat ut, laoreet
+                        ante.</li>
+                    <li>
+                        <b><i>Giải đặc biệt, nhất nhì: </i></b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed neque porta, pharetra erat ut, laoreet
+                        ante. Mauris consectetur eget est non facilisis. Mauris consectetur eget est non facilisis</li>
+                </ul>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

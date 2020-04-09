@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border: 1px solid green;
+        }
+        th,td{padding: 20px 30px;}
+        tr:nth-child(odd){background-color: lightpink;}
+        /*td:nth-child(even){background-color: #fd2b1c}   !*tô cột*!*/
+    </style>
+</head>
+<body>
+<!--<table border="1">-->
+<!--    <tr>-->
+<!--        <th>a1</th>-->
+<!--        <th>a2</th>-->
+<!--        <th>a3</th>-->
+<!--        <th>a4</th>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>b1</td>-->
+<!--        <td>b2</td>-->
+<!--        <td>b3</td>-->
+<!--        <td>b4</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>c1</td>-->
+<!--        <td>c2</td>-->
+<!--        <td>c3</td>-->
+<!--        <td>c4</td>-->
+<!--    </tr>-->
+<!--</table>-->
+<table border="1">
+    <caption>
+        Bảng 1: Ví dụ về rowspan and colspan
+    </caption>
+    <tr>
+        <td rowspan="3" colspan="2">A1</td>
+        <td colspan="3">A2</td>
+    </tr>
+    <tr><td colspan="2">A3</td></tr>
+    <tr><td colspan="2">A4</td></tr>
+    <tr>
+        <td rowspan="2">B1</td>
+        <td rowspan="2">B2</td>
+        <td colspan="2">B3</td>
+    </tr>
+    <tr>
+        <td>B4</td>
+        <td>B5</td>
+    </tr>
+</table>
+
+</body>
+</html>

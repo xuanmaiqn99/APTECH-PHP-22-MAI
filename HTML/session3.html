@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lession 3</title>
+    <style>
+        /*div{*/
+        /*    width: 60%;*/
+        /*    margin: auto;*/
+        /*    background-image: url(images/cute-background-hd_115830959.jpg);*/
+        /*    box-shadow: 3px 3px 5px gray;    !*đổ bóng của khung*!*/
+        /*    padding: 10px 20px;*/
+        /*}*/
+        h1{
+            text-align: center;
+            color: #339b9a;
+        }
+        /*#content1 {*/
+        /*    background-color: #339b9a;*/
+        /*    color: #fff;*/
+        /*    font-weight: bold;*/
+        /*    font-style: italic;*/
+        }
+        p{
+            color: #339b9a;
+            text-align: justify;        /*căn đều hai bên */
+        }
+        div#background{     /*div ko dc cách ra. nếu cách ra đc hiểu là cha con*/
+            background-image: url(images/xe-hoi.jpg);
+            height: 400px;
+            background-position: center;
+            /*lấy từ giữa lấy ra 2 bên */
+            background-attachment: fixed;
+            /*giữ ảnh ko di chuyển, chỉ khung trang di chuyển*/
+            line-height: 400px;
+        }
+        #background >h2{
+            color: #fff;
+            text-align: center;
+            line-height: 400px;
+        }
+    </style>
+</head>
+<body>
+<h1>Lâu đài gỗ ở Pattaya</h1>
+<div id="background">
+    <h2>HTML5</h2>
+</div>
+<p>   <!-- vì nó khác nên cần đặt id-->
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed neque porta, pharetra erat ut, laoreet
+    ante. Mauris consectetur eget est non facilisis. Sed pellentesque, odio eget sollicitudin auctor, sem lectus
+    lacinia sem, non laoreet mauris sem sed metus. Praesent fringilla lectus quis arcu feugiat tristique.
+</p>
+<pre>   <!-- nếu muốn xuống dòng thay thẻ <p></p> bằng thẻ <pre></pre>-->
+        <span>L</span>orem ipsum dolor sit amet, consectetur adipiscing elit.
+        Quisque sed neque porta, pharetra erat ut, laoreet ante.
+        Mauris consectetur eget est non facilisis.
+        Sed pellentesque, odio eget sollicitudin auctor, sem lectus
+        lacinia sem, non laoreet mauris sem sed metus. Praesent fringilla lectus quis arcu feugiat tristique.
+</pre>
+<p>
+    <span>L</span>orem ipsum dolor sit amet, consectetur adipiscing elit.
+    Quisque sed neque porta, pharetra erat ut, laoreet ante.
+    Mauris consectetur eget est non facilisis.
+    Sed pellentesque, odio eget sollicitudin auctor, sem lectus
+    lacinia sem, non laoreet mauris sem sed metus. Praesent fringilla lectus quis arcu feugiat tristique.
+</p>
+<p>xin <del>cháo</del> <ins>chào</ins> các bạn</p>
+<!--    gạch cháo chèn chào để sửa chữ -->
+<p>a<sup>2</sup></p>
+<p>H<sub>2</sub>O</p>
+<code>int a = 1;</code>
+<blockquote>
+    “When one door closes, another opens; but we often look so long
+    and so regretfully upon the closed door that we do not see the
+    one which has opened for us.” -Alexander Graham Bell
+</blockquote>
+<ol star="5" style="list-style-type: upper-roman;">
+    <!--        nếu ko thích thì thay upper-roman = none-->
+    <li>Sunday</li>
+    <li>Monday</li>
+    <li>Tuesday</li>
+    <li>Wednesday</li>
+    <li>Thursday</li>
+    <li>Friday</li>
+    <li>Saturday</li>
+</ol>
+<ul style="list-style-type: dish;">
+    <!--  nếu ko thích thì thay dish = square, cricle, none-->
+    <li>Sunday</li>
+    <li>Monday</li>
+    <li>Tuesday</li>
+    <li>Wednesday</li>
+    <li>Thursday</li>
+    <li>Friday</li>
+    <li>Saturday</li>
+</ul>
+<dl>
+    <dt> thức ăn</dt>
+    <dd>gà</dd>
+    <dd>bò</dd>
+    <dt> thức uống</dt>
+    <dd>cam ép</dd>
+    <dd>cam vắt</dd>
+</dl>
+</body>
+</html>

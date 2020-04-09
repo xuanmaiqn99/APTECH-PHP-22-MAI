@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX 12-4</title>
+    <style>
+        form {
+            color: blue;
+            width: 400px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 5px 0;
+            margin-bottom: 10px;
+        }
+
+        label {
+            width: 80px;
+            float: left;
+        }
+
+        .nut {
+            padding: 5px 10px;
+            background: lightskyblue;
+            border: 1px solid cadetblue;
+            color: #ffffff; font-size: 90%;
+            border-radius: 5px;
+        }
+
+        #getValue {
+            width: 600px; height: 30px; margin: auto; padding: 5px; color: blue;
+            background-color: lightskyblue; text-align: center;
+            border-radius: 10px; font-size: 120%;
+        }
+    </style>
+    <script>
+        function result() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            var c;
+            if(a&&b) {
+                if (a == 0 && b == 0) {
+                    c = 'Phuong trinh ' + a + 'x + ' + b + ' = 0 co vo so nghiem';
+                    document.getElementById("getValue").innerHTML = c;
+                } else if (a != 0 && b == 0) {
+                    c = 'Phuong trinh ' + a + 'x + ' + b + ' = 0 co nghiem x = 0';
+                    document.getElementById("getValue").innerHTML = c;
+                } else if (a == 0 && b != 0) {
+                    c = 'Phuong trinh ' + a + 'x + ' + b + ' = 0 vo nghiem';
+                    document.getElementById("getValue").innerHTML = c;
+                } else {
+                    c = 'Phuong trinh ' + a + 'x + ' + b + ' = 0 co nghiem x = ' + (-b / a);
+                    document.getElementById("getValue").innerHTML = c;
+                }
+            }
+            else document.getElementById("getValue").innerHTML ="Vui lòng nhập giá trị " +
+                "đầy đủ cho a và b";
+        }
+    </script>
+</head>
+<body>
+<form action="#">
+    <fieldset>
+        <legend>Giai phuong trinh bac nhat dang ax + b = 0</legend>
+        <label>Nhap a: </label>
+        <input type="number" id="a" value="0"> <br>
+        <label>Nhap b: </label>
+        <input type="number" id="b" value="0"> <br>
+        <label>&nbsp</label>
+        <input class="nut" type="button" value="Submit"
+               onclick="result();">
+    </fieldset>
+</form>
+<div id="getValue">
+</div>
+</body>
+</html>

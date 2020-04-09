@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session 14</title>
+
+<!--    <script>-->
+<!--        //ko làm đẹp thì ko cần function-->
+<!--        var listAge = new Array(5); //mảng 5 ptu-->
+<!--        for(var i=0; i<5; i++) {  //viêt var i=0 trong for mang tính chất cục bộ - local)-->
+<!--            listAge[i] = parseInt(prompt("Nhập tuổi cho từng phần tử", 18));-->
+<!--            //prompt: nhập trưc tiếp dữ liệu-->
+<!--        }-->
+<!--        document.write(" <h2>Tuổi của bạn là: </h2> <br>");-->
+<!--        for(var i=0; i<5; i++) {-->
+<!--            document.write(listAge[i] + "<br>");-->
+<!--        }-->
+<!--        var max=0;-->
+<!--        for(var i=0; i<5; i++){-->
+<!--            if (max < listAge[i]) max=listAge[i];-->
+<!--        }-->
+<!--        document.write("Tuổi lớn nhất là: "+max+"<br>");-->
+<!--        var sum=0;-->
+<!--        for(var i=0; i<5; i++){-->
+<!--            sum= sum+ listAge[i];-->
+<!--        }-->
+<!--        document.write("Tổng các phần tử là: "+sum/5+"<br>");-->
+<!--        document.write("Vị trí của phần tử chẵn là: ")-->
+<!--        for(var i=0; i<5; i++){-->
+<!--            if(listAge[i]%2==0) document.write(i+ " ");-->
+<!--        }-->
+<!--        //for(var..in[listAge]{}-->
+<!--        //for(var i=0; i< listAge.length; i++){};-->
+
+<!--    </script>-->
+    <script>
+        var table= new Array(3)
+        for(var i=0; i<3; i++){   //dòng trước
+            for(var j=1; j<5; j++){
+                document.write([i]+[j] + " ");
+            }
+            document.write("<br>");
+        }
+    </script>
+</head>
+<body>
+<!--Js viết trong body khi-->
+<!--lợi: chạy luôn-->
+<!--hại: khi nhấn chuột phải kt thì toàn bộ nội dung bị lộ, như pass.-->
+</body>
+</html>
